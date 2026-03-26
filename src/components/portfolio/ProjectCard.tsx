@@ -12,11 +12,11 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, priority = false }: ProjectCardProps) {
   return (
-    <Link href={`/portfolio/${project.slug}`} className="group block overflow-hidden">
+    <Link href={`/portfolio/${project.slug}`} className="group block h-full overflow-hidden">
       <motion.div
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-        className="overflow-hidden"
+        className="h-full overflow-hidden"
       >
         <div className="relative w-full h-full overflow-hidden">
           <Image
